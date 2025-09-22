@@ -13,6 +13,7 @@ import authRoutes from "./routes/auth.js";
 import adminRoutes from "./routes/admin.js";
 import managerRoutes from "./routes/manager.js";
 import editorRoutes from "./routes/editor.js";
+import countriesRoutes from  "./routes/countries.js";
 
 const app = express();
 
@@ -52,6 +53,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/manager", managerRoutes);
 app.use("/api/editor", editorRoutes);
+app.use("/api/countries", countriesRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
