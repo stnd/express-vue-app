@@ -1,0 +1,47 @@
+/* :root {
+  --e-global-color-primary: #00475d;
+  --e-global-color-secondary: #65028e;
+  --e-global-color-text: #333333;
+  --e-global-color-accent: #0f2170;
+  --e-global-color-2fa50f9: #fffffff7;
+  --e-global-color-2535d5a: #f8fafa;
+  --e-global-color-77a68ad: #e1e8ec;
+  --e-global-color-72d56d3: #ffffff00;
+  --e-global-color-d7fd741: #f5f6f9;
+  --e-global-color-38e70fe: #e1e8ec80;
+  --e-global-color-18f73ba: #0077b5;
+  --e-global-color-0c342f6: #00475d0f;
+  --e-global-color-0d589d3: #bec3c6;
+  --e-global-color-fd17ce6: #ffffffe6;
+  --e-global-color-afdb1c4: #545454;
+
+  --e-global-typography-primary-font-family: "Roboto";
+  --e-global-typography-secondary-font-family: "Roboto Slab";
+  --e-global-typography-accent-font-family: "Roboto";
+} */
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #00475d;
+  --color-secondary: #65028e;
+  --color-accent: #0f2170;
+}
+
+/* :root {
+  --e-global-color-primary: #00475d;
+  --e-global-color-secondary: #65028e;
+  --e-global-color-text: #333333;
+  --e-global-color-accent: #0f2170;
+  --e-global-color-2fa50f9: #fffffff7;
+  --e-global-color-2535d5a: #f8fafa;
+  --e-global-color-77a68ad: #e1e8ec;
+  --e-global-color-72d56d3: #ffffff00;
+  --e-global-color-d7fd741: #f5f6f9;
+  --e-global-color-38e70fe: #e1e8ec80;
+  --e-global-color-18f73ba: #0077b5;
+  --e-global-color-0c342f6: #00475d0f;
+  --e-global-color-0d589d3: #bec3c6;
+  --e-global-color-fd17ce6: #ffffffe6;
+  --e-global-color-afdb1c4: #545454;
+} */
