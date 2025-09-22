@@ -23,29 +23,3 @@ router.get("/northamerica-countries", async (req, res) => {
 });
 
 export default router;
-
-// Get all users with limited info
-// router.get("/users", async (req, res) => {
-//   try {
-//     const users = await User.findAll({
-//       attributes: [
-//         "id",
-//         "username",
-//         "firstName",
-//         "lastName",
-//         "email",
-//         "isActive",
-//       ],
-//       include: [
-//         {
-//           model: Role,
-//           attributes: ["name"],
-//         },
-//       ],
-//     });
-
-//     res.json({ users });
-//   } catch (error) {
-//     res.status(500).json({ error: error.message });
-//   }
-// });
