@@ -24,6 +24,10 @@
               Dashboard
             </router-link>
 
+            <router-link to="/countries" class="text-primary hover:text-secondary font-medium">
+              Countries
+            </router-link>
+
             <!-- Role-based Links -->
             <router-link v-if="authStore.hasAnyRole(['admin', 'manager', 'editor'])" to="/editor"
               class="text-primary hover:text-secondary font-medium">

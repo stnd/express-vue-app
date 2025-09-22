@@ -6,6 +6,7 @@ import Home from "@/views/Home.vue";
 import Login from "@/views/Login.vue";
 import Register from "@/views/Register.vue";
 import Dashboard from "@/views/Dashboard.vue";
+import Countries from "@/views/Countries.vue";
 import AdminPanel from "@/views/AdminPanel.vue";
 import ManagerPanel from "@/views/ManagerPanel.vue";
 import EditorPanel from "@/views/EditorPanel.vue";
@@ -36,6 +37,12 @@ const routes = [
     name: "Dashboard",
     component: Dashboard,
     meta: { requiresAuth: true },
+  },
+  {
+    path: "/countries",
+    name: "Countries",
+    component: Countries,
+    meta:  { requiresAuth: true },
   },
   {
     path: "/profile",
