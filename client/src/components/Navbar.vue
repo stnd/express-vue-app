@@ -24,9 +24,24 @@
               Dashboard
             </router-link>
 
-            <router-link to="/countries" class="text-primary hover:text-secondary font-medium">
+            <div class="relative">
+              <button @click="showToolsMenu = !showToolsMenu"
+                class="flex items-center space-x-1 text-primary hover:text-secondary font-medium">
+                <span>Tools</span>
+                <ChevronDownIcon class="h-4 w-4" />
+              </button>
+
+              <div v-if="showToolsMenu" class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50"
+                @click="showToolsMenu = false">
+                <router-link to="/countries" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                  Countries
+                </router-link>
+              </div>
+            </div>
+
+            <!-- <router-link to="/countries" class="text-primary hover:text-secondary font-medium">
               Countries
-            </router-link>
+            </router-link> -->
 
             <!-- Role-based Links -->
             <router-link v-if="authStore.hasAnyRole(['admin', 'manager', 'editor'])" to="/editor"
@@ -100,6 +115,7 @@ export default {
     const authStore = useAuthStore()
     const router = useRouter()
     const showUserMenu = ref(false)
+    const showToolsMenu = ref(false)
 
     const handleLogout = async () => {
       await authStore.logout()
@@ -109,6 +125,7 @@ export default {
     return {
       authStore,
       showUserMenu,
+      showToolsMenu,
       handleLogout
     }
   }
